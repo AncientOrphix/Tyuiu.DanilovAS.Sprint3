@@ -8,7 +8,7 @@ namespace Tyuiu.DanilovAS.Sprint3.Task0.V14.Lib
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
             double sumSeries = 1;
-            int i;
+            int i; 
 
             for(i = startValue; i <= stopValue; i++)
             {
