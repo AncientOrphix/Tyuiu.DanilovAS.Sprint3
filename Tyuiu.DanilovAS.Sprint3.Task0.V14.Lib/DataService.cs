@@ -9,6 +9,7 @@ namespace Tyuiu.DanilovAS.Sprint3.Task0.V14.Lib
         {
             double sumSeries = 0;
             int i;
+
             for(i = startValue; startValue < stopValue; startValue++)
             {
                 sumSeries += Math.Pow((1/(Math.Pow(startValue,value))), - 1);
