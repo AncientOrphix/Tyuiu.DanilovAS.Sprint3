@@ -10,7 +10,7 @@ namespace Tyuiu.DanilovAS.Sprint3.Task1.V29.Lib
             while (startValue <= stopValue)
             {
                 res *= (Math.Pow(value, 2) * startValue)+2 ;
-                startValue++;
+                startValue++; 
             }
             return Math.Round(res,3);
         }
