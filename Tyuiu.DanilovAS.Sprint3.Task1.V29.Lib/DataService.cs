@@ -12,7 +12,7 @@ namespace Tyuiu.DanilovAS.Sprint3.Task1.V29.Lib
                 res *= (Math.Pow(value, 2) * startValue)+2 ;
                 startValue++;
             }
-            return Math.Round(res);
+            return Math.Round(res,3);
         }
     }
 }
