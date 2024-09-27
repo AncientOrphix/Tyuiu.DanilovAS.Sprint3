@@ -16,8 +16,9 @@ namespace Tyuiu.DanilovAS.Sprint3.Task7.V5.Lib
             //y = (2*(Math.Sin(i)))/(3*i+1.2) + Math.Cos(i) - 7* i *2;
             for (int i = startValue; i <= stopValue; i++)
             {
-                y = (2 * Math.Sin(i)) / (3 * i + 1.2) + Math.Cos(i) - 7 * i * 2;
+                y = Math.Round((2 * Math.Sin(i)) / (3 * i + 1.2) + Math.Cos(i) - 7 * i * 2,2);
                 valueArray[count] = y;
+                count++;
             }
             return valueArray;
         }
