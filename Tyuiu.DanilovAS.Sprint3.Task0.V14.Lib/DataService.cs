@@ -7,12 +7,12 @@ namespace Tyuiu.DanilovAS.Sprint3.Task0.V14.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            double sumSeries = 0;
+            double sumSeries = 1;
             int i;
 
             for(i = startValue; i <= stopValue; i++)
             {
-                sumSeries += Math.Pow((1/(Math.Pow(startValue,value))), - 1);
+                sumSeries = sumSeries *  Math.Pow((1)/(Math.Pow(i,value)),-1);
             }
 
             return Math.Round(sumSeries,3);
