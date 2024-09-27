@@ -1,0 +1,39 @@
+using Tyuiu.DanilovAS.Sprint3.Task7.V5.Lib;
+
+namespace Tyuiu.DanilovAS.Sprint3.Task7.V5.Test
+{
+    [TestClass]
+    public class DataServiceTest
+    {
+        [TestMethod]
+        public void TestGetMassFunction()
+        {
+            DataService ds = new DataService();
+
+            int startValue = -5;
+            int stopValue = 5;
+
+            int len = stopValue - startValue + 1;
+
+            double[] valueWaitArray;
+            valueWaitArray = new double[len];
+
+            valueWaitArray[0] = -69.83 ;
+            valueWaitArray[1] = 0.00;
+            valueWaitArray[2] = 0.00;
+            valueWaitArray[3] = 0.00;
+            valueWaitArray[4] = 0.00;
+            valueWaitArray[5] = 0.00;
+            valueWaitArray[6] = 0.00;
+            valueWaitArray[7] = 0.00;
+            valueWaitArray[8] = 0.00;
+            valueWaitArray[9] = 0.00;
+            valueWaitArray[10] = 0.00;
+
+            double[] res;
+            res = new double[len];
+            res = ds.GetMassFunction(startValue, stopValue);
+            CollectionAssert.AreEqual(valueWaitArray,res);
+        }
+    }
+}
